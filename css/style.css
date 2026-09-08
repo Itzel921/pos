@@ -1,0 +1,45 @@
+.logo{
+    width: 100%; /* Que hace esto */
+    max-width: 150px;/* Que hace esto */
+    height: auto;/* Que hace esto */
+    margin-right: 20px;/* Que hace esto */
+    position: absolute;/* Que hace esto */
+    top: 0;/* Que hace esto */
+}
+
+.logo2{
+    width: 100%;/* Que hace esto */
+    max-width: 100px;/* Que hace esto */
+    height: auto;/* Que hace esto */
+    margin-left: 1350px;/* Que hace esto */
+    position: absolute;/* Que hace esto */
+    top: 0;/* Que hace esto */
+}
+
+.contenido{
+    text-align: center;/* Que hace esto */
+    align-items: center;/* Que hace esto */
+    display: flex;/* Que hace esto */
+    justify-content: space-around;/* Que hace esto */
+
+}
+
+.titulo{
+    margin: 0;/* Que hace esto */
+
+}
+
+.subtitulo{
+    margin: 0;/* Que hace esto */
+}
+
+.contenedor{
+    font-size: x-large;
+    height: 60vh;
+    max-height: 60vh;
+    overflow-y:auto;
+    border: 1px solid #000000;
+    background-color: white;
+    margin-top: 20px;
+    
+}
