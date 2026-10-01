@@ -210,7 +210,7 @@ function pagar() {
 }
 
 
-function tranferencia() {
+function tranferencia(){
     let input;
     let regex16Digitos = /^\d{16}$/; // Valida que sean exactamente 16 números
 
@@ -219,7 +219,7 @@ function tranferencia() {
         
         // Si el usuario presiona "Cancelar", input será null, salimos para evitar bucle infinito
         if (input === null) {
-            break;
+            return; // Salir de la función si el usuario cancela
         }
         
         if (!regex16Digitos.test(input)) {
@@ -228,7 +228,27 @@ function tranferencia() {
         
     } while (!regex16Digitos.test(input));
 
-    if (input !== null) {
-        alert("¡Dato válido ingresado correctamente!");
-    }
+
+    var saldo = prompt("ingrese el monto a transferir");
+    var tabla = document.getElementById('cuerpo');
+    var renglon = tabla.insertRow();
+
+    var celda1 = renglon.insertCell(0);
+    var celda2 = renglon.insertCell(1);
+    var celda3 = renglon.insertCell(2);
+    var celda4 = renglon.insertCell(3);
+
+    celda1.setAttribute("style", "text-align: center;");
+    celda2.setAttribute("style", "text-align: center;");
+    celda3.setAttribute("style", "text-align: right;");
+    celda4.setAttribute("style", "text-align: right;");
+
+    celda1.innerHTML = "1";
+    celda2.innerHTML = input;
+    celda3.innerHTML = saldo;
+    celda4.innerHTML = saldo;
+
+    total += parseFloat(saldo);
+    document.getElementById("total").innerHTML = "$" + total.toFixed(2).toString();
+
 }
