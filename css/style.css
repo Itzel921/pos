@@ -1,6 +1,6 @@
 .logo{
-    width: 100%; /* Que hace esto */
-    max-width: 150px;/* Que hace esto */
+    width: 100%; /* ancho del elemento */
+    max-width: 150px;/*E*/
     height: auto;/* Que hace esto */
     margin-right: 20px;/* Que hace esto */
     position: absolute;/* Que hace esto */
@@ -11,7 +11,7 @@
     width: 100%;/* Que hace esto */
     max-width: 100px;/* Que hace esto */
     height: auto;/* Que hace esto */
-    margin-left: 1350px;/* Que hace esto */
+    margin-left: 1390px;/* Que hace esto */
     position: absolute;/* Que hace esto */
     top: 0;/* Que hace esto */
 }
@@ -42,4 +42,86 @@
     background-color: white;
     margin-top: 20px;
     
+}
+
+
+#carrito{
+    max-height: 50%;
+    width: 100%;
+    font-size: larger;
+}
+
+
+.titulocantidad{
+    width: 10%;
+}
+
+#cuerpo{
+    max-height: 10%;
+    width: 100%;
+    font-size: larger;
+}
+
+.claseinput{
+    font-size: x-large;
+    width: calc(100% - 8px);  /*Esto se puede adapatar a cualquier tamaño de pantalla*/
+}
+
+
+.contenedor2{
+    display: flex;
+    align-items: center;
+}
+
+
+.claseboton{
+    height: 15vh;
+    width: 28dvh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border: none;
+    background-color: #Ffff00;
+    margin: 10px;
+    background-size: 40%;
+    padding: 10px;
+}
+
+#boton1{
+    background-image: url("../img/cancelar.png");
+}
+
+#boton2{
+    background-image: url("../img/money.png");
+}
+
+#boton3{
+    background-image: url("../img/transferencia.png");
+}
+
+#boton4{
+    background-image: url("../img/dinero.png");
+}
+
+#boton5{
+    background-image: url("../img/pagar.png");
+}
+
+
+.feedback{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #ff0000;
+}
+
+.total{
+    display: flex;
+    border: 2px solid #000000;
+    height: 5dvw;
+    width: 30%;
+    margin-left: auto;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
 }
