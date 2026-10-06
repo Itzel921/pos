@@ -1,0 +1,21 @@
+.modal {
+    display: none;                         /* Oculta el elemento por defecto */
+    position: fixed;                       /* Lo fija en la pantalla sin importar el scroll */
+    inset: 0;                              /* Cubre toda la pantalla (top, right, bottom, left en 0) */
+    background-color: rgba(0,0,0,0.6);     /* Fondo negro semitransparente al 60% */
+    justify-content: center;               /* Centra el contenido horizontalmente (Flex) */
+    align-items: center;                   /* Centra el contenido verticalmente (Flex) */
+}
+
+.contenido-modal {
+    background-color: white;               /* Fondo blanco para la tarjeta/caja */
+    padding: 30px;                         /* Espacio interno de 30px */
+    border-radius: 10px;                   /* Bordes redondeados de 10px */
+    text-align: center;                    /* Centra el texto en el interior */
+}
+
+.contenido-modal img {
+    width: 100px;                          /* Ancho fijo de 100px para la imagen */
+    margin: 10px;                          /* Espacio externo de 10px alrededor */
+    cursor: pointer;                       /* Cambia el cursor a mano al pasar por encima */
+}

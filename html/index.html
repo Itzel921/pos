@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador de PoS</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/modal.css">
+
     <script src="../js/function.js"></script>
+    <script src="../js/modal.js"></script>
 
 </head>
 <body>
@@ -45,12 +48,30 @@
         <input type ="button" id="boton1" class="claseboton" onclick="cancelar_venta()">
         <input type ="button" id="boton2" class="claseboton" onclick="saldo_camion()">
         <input type ="button" id="boton3" class="claseboton" onclick="tranferencia()">
-        <input type ="button" id="boton4" class="claseboton">
+        <input type ="button" id="boton4" class="claseboton" onclick="abrirModal()">
         <input type ="button" id="boton5" class="claseboton" onclick="pagar()">
 
         <div id="feedback" class="feedback"> </div>
         <div class="total">
             <h1 id="total">$0.00 </h1>
+        </div>
+    </div>
+
+
+
+    <div id="modal" class="modal">
+        <div class="contenido-modal">
+            
+            <h2>Selecciona un saldo para tu telefono</h2>
+            <img src="../img/20.png" onclick="saldo20()">
+            <img src="../img/100.png" onclick="saldo100()">
+            <img src="../img/200.png" onclick="saldo200()">
+            <img src="../img/500.png" onclick="saldo500()">
+            <br><br>
+
+            <button type="button" onclick="cerrarModal()">Cerrar</button>
+
+
         </div>
     </div>
 

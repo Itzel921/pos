@@ -1,127 +1,130 @@
 .logo{
-    width: 100%; /* ancho del elemento */
-    max-width: 150px;/*E*/
-    height: auto;/* Que hace esto */
-    margin-right: 20px;/* Que hace esto */
-    position: absolute;/* Que hace esto */
-    top: 0;/* Que hace esto */
+    width: 100%; /* ancho del elemento, /* Ocupa todo el ancho (100%) disponible del contenedor */
+    max-width: 150px;/* Ancho máximo del elemento, no puede ser mayor que 150px */
+    height: auto;/* Ajusta automaticamente la altura según la proporción de la imagen */
+    margin-right: 20px;/* Añade espacio de separación interno a la derecha de la imagen */
+    position: absolute;/* Saca el elemento del flujo normal del documento y lo posiciona relativo a su ancestro posicionado más cercano */
+    top: 0;/* Coloca el elemento en el borde superior exacto (0 píxeles) de su contenedor de referencia */
 }
 
 .logo2{
-    width: 100%;/* Que hace esto */
-    max-width: 100px;/* Que hace esto */
-    height: auto;/* Que hace esto */
-    margin-left: 1390px;/* Que hace esto */
-    position: absolute;/* Que hace esto */
-    top: 0;/* Que hace esto */
+    width: 100%; /* ancho del elemento, ocupa el 100% del ancho del contenedor  padre*/
+    max-width: 100px;/* Ancho máximo del elemento, no puede ser mayor que 100px */
+    height: auto;/* Ajusta automaticamente la altura según la proporción de la imagen */
+    margin-left: 1390px;/* Añade espacio de separación interno a la izquierda de la imagen */
+    position: absolute;/* Saca el elemento del flujo normal del documento y lo posiciona relativo a su ancestro posicionado más cercano */
+    top: 0;/* Coloca el elemento en el borde superior exacto (0 píxeles) de su contenedor de referencia */
 }
 
 .contenido{
-    text-align: center;/* Que hace esto */
-    align-items: center;/* Que hace esto */
-    display: flex;/* Que hace esto */
-    justify-content: space-around;/* Que hace esto */
+    text-align: center;/* centra HORIZONTALMENTE el texto y los elementos del contenedor*/
+    align-items: center;/* centra VERTICALMENTE los elementos del contenedor */
+    display: flex; /* Convierte el contenedor en una caja flexible (Flexbox) para organizar sus elementos */
+    justify-content: space-around;/* Distribuye los elementos del contenedor con espacio entre ellos */
 
 }
 
 .titulo{
-    margin: 0;/* Que hace esto */
+    margin: 0; /* Quita todos los márgenes externos por defecto (superior, derecho, inferior e izquierdo) */
 
 }
 
 .subtitulo{
-    margin: 0;/* Que hace esto */
+    margin: 0; /* Quita todos los márgenes externos por defecto (superior, derecho, inferior e izquierdo) */
 }
 
 .contenedor{
-    font-size: x-large;
-    height: 60vh;
-    max-height: 60vh;
-    overflow-y:auto;
-    border: 1px solid #000000;
-    background-color: white;
-    margin-top: 20px;
+    font-size: x-large; /*Establece un tamaño de letra muy grande prédefinido por el navegador*/
+    height: 60vh; /* Ajusta la altura fija al 60% del alto total de la pantalla (Viewport Height) */
+    max-height: 60vh; /* Asegura que la altura nunca exceda ese 60% de la pantalla */
+    overflow-y:auto;  /* Permite el desplazamiento vertical si el contenido excede la altura */
+    border: 1px solid #000000; /* Añade un borde alrededor del contenido  de 1pixel grueso y negro*/
+    background-color: white; /*Fondo del contenedor blanco*/
+    margin-top: 20px; /* Agrega una separación de 20 píxeles en la parte superior externa */
     
 }
 
 
 #carrito{
-    max-height: 50%;
-    width: 100%;
-    font-size: larger;
+    max-height: 50%; /* Limita la altura máxima al 50% de la altura de su elemento padre */
+    width: 100%; /* Ocupa todo el ancho (100%) disponible del contenedor */
+    font-size: larger; /*Aumenta el texto a un tamaño un nivel más grande que el heredado */
 }
 
 
 .titulocantidad{
-    width: 10%;
+    width: 10%; /* Asigna un ancho equivalente al 10% del contenedor padre */
 }
 
 #cuerpo{
-    max-height: 10%;
-    width: 100%;
-    font-size: larger;
+    max-height: 10%; /* Limita la altura máxima al 10% del elemento padre */
+    width: 100%;  /* Ocupa el 100% del ancho del contenedor */
+    font-size: larger;  /* Aumenta el tamaño del texto un paso por encima del valor estándar */
 }
 
-.claseinput{
-    font-size: x-large;
-    width: calc(100% - 8px);  /*Esto se puede adapatar a cualquier tamaño de pantalla*/
+
+.claseinput{ 
+    font-size: x-large;  /* Aumenta el tamaño del texto un paso por encima del valor estándar */
+    width: calc(100% - 8px);  /*Esto se puede adapatar a cualquier tamaño de pantalla. Calcula dinámicamente el ancho restando 8 píxeles al 100% disponible para evitar desbordamientos*/
 }
 
 
 .contenedor2{
-    display: flex;
-    align-items: center;
+    display: flex; /* Convierte el contenedor en una caja flexible (Flexbox) para organizar sus elementos */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
 }
 
 
 .claseboton{
-    height: 15vh;
-    width: 28dvh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    border: none;
-    background-color: #Ffff00;
-    margin: 10px;
-    background-size: 40%;
-    padding: 10px;
+    height: 15vh; /* Define la altura al 15% del alto de la pantalla */
+    width: 28dvh; /*Define el ancho al 28% de la altura dinámica de la pantalla (Dynamic Viewport Height)*/
+    background-repeat: no-repeat;  /* Evita que la imagen de fondo se repita como mosaico */
+    background-position: center; /* Centra la imagen de fondo dentro de la superficie del botón */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    border: none; /* Elimina el borde predeterminado del botón */
+    background-color: #Ffff00; /* Establece un color de fondo amarillo para el botón */
+    margin: 10px; /* Añade un margen de 10 píxeles alrededor del botón para separar visualmente de otros elementos */
+    background-size: 40%; /* Ajusta el tamaño de la imagen de fondo al 40% del área del botón */
+    padding: 10px; /* Crea un espacio interior de 10 píxeles entre los bordes del botón y su contenido */
 }
 
 #boton1{
-    background-image: url("../img/cancelar.png");
+    background-image: url("../img/cancelar.png"); /*Carga una imagen */
 }
 
 #boton2{
-    background-image: url("../img/une.png");
+    background-image: url("../img/une.png"); /*Carga una imagen */
 }
 
 #boton3{
-    background-image: url("../img/transferencia.png");
+    background-image: url("../img/transferencia.png"); /*Carga una imagen */
 }
 
 #boton4{
-    background-image: url("../img/dinero.png");
+    background-image: url("../img/tiempoaire.png");/*Carga una imagen */
 }
 
 #boton5{
-    background-image: url("../img/pagar.png");
-}
+    background-image: url("../img/pagar.png"); /*Carga una imagen */
+} 
 
 
 .feedback{
     font-size: xx-large;
-    font-weight: bolder;
-    color: #ff0000;
+    font-weight: bolder; /* Aplica el grosor de texto más marcado/negrita posible según la fuente */
+    color: #ff0000; /* Cambia el  color del texto a rojo */
 }
 
 .total{
     display: flex;
-    border: 2px solid #000000;
-    height: 5dvw;
-    width: 30%;
-    margin-left: auto;
-    font-size: xx-large;
-    align-items: center;
-    justify-content: center;
+    border: 2px solid #000000; /* Aplica un borde negro sólido de 2 píxeles de grosor */
+    height: 5dvw;  /* Define la altura al 5% del ancho dinámico de la pantalla*/
+    width: 30%;   /* Ocupa un 30% del ancho del contenedor en el que se encuentra */
+    margin-left: auto; /* Desplaza el elemento hacia la derecha */
+    font-size: xx-large;  /* Define el texto a un tamaño muy grande */
+    align-items: center;  /* Centra verticalmente el contenido interno */
+    justify-content: center; /* Centra horizontalmente el contenido interno */
 }
+
+
+

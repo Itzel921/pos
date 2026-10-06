@@ -170,11 +170,16 @@ function cancelar_venta() {
     var resultado = confirm("Estas seguro de cancelar la venta?");
 
     if (resultado == true) {
-        document.getElementById("cuerpo").innerHTML = "";
-        total = 0;
-        document.getElementById("total").innerHTML = "$0.00";
-        document.getElementById("codigodelproducto").value = "";
+        limpiar_venta();
     }
+}
+
+function limpiar_venta() {
+    document.getElementById("cuerpo").innerHTML = "";
+    total = 0;
+    subtotal = 0;
+    document.getElementById("total").innerHTML = "$0.00";
+    document.getElementById("codigodelproducto").value = "";
 }
 
 
@@ -205,8 +210,16 @@ function saldo_camion() {
 
 
 function pagar() {
-    var feria = parseFloat(document.getElementById("codigodelproducto").value) - total;
-    document.getElementById("codigodelproducto").value = "feria: $" + feria;
+    var pago = parseFloat(document.getElementById("codigodelproducto").value);
+
+    if (Number.isNaN(pago)) {
+        alert("Ingresa el monto recibido para poder pagar.");
+        return;
+    }
+
+    var feria = pago - total;
+    alert("Feria: $" + feria.toFixed(2));
+    limpiar_venta();
 }
 
 
@@ -229,7 +242,7 @@ function tranferencia(){
     } while (!regex16Digitos.test(input));
 
 
-    var saldo = prompt("ingrese el monto a transferir");
+    var saldo = prompt("Ingrese el monto a transferir: ");
     var tabla = document.getElementById('cuerpo');
     var renglon = tabla.insertRow();
 
@@ -239,7 +252,7 @@ function tranferencia(){
     var celda4 = renglon.insertCell(3);
 
     celda1.setAttribute("style", "text-align: center;");
-    celda2.setAttribute("style", "text-align: center;");
+    celda2.setAttribute("style", "text-align: left;");
     celda3.setAttribute("style", "text-align: right;");
     celda4.setAttribute("style", "text-align: right;");
 
