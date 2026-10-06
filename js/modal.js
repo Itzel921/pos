@@ -120,9 +120,6 @@ function saldo500(){
 }
 
 
-
-
-
 function cerrarModal(){
     document.getElementById("modal").style.display = "none";
 }
